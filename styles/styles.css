@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-margin: 5rem;
+}
+
+h1 {
+  font-size: 155px;
+  margin-bottom: -35px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 65px;
+    margin-bottom: -10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  background: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  /* max-width: auto; */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: rgb(45,186,82);
+  background: linear-gradient(148deg, rgba(45,186,82,1) 0%, rgba(0,102,215,1) 100%);
+  height: 75px;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 1px;
+  z-index: 2;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: rgb(216, 216, 216);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+}
+
+@media (max-width: 600px) {
+  .navbar .desktop {
+    display: none;
+  }
+  .navbar .logo  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+.hero {
+  /* Sizing */
+  width: auto;
+  height: 90vh;
+
+  padding: 70px;
+  text-shadow: 3px 3px 5px #000000;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://staticg.sportskeeda.com/editor/2022/04/62d20-16491913648939-1920.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    /* Sizing */
+    width: 100vw;
+    height: 45vh;
+
+    padding: 70px;
+  
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Text styles */
+    text-align: center;
+    color: white;
+  
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdnb.artstation.com/p/assets/images/images/013/535/601/large/supawit-oat-fin1.jpg?1540053395');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+
+
+/* SCROLL DOWN BUTTON IN HERO IMAGE */
+
+.box {
+	height: 2vw;
+	width: 2vw;
+	margin: auto;
+  margin-top: 2rem;
+
+  animation-name: colorChange;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
+}	
+
+.scroll-down-arrow:hover {
+	border-color: #0062FF;
+}
+
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+
+/* COLOR BAR UNDER HERO IMAGE */
+
+.bottom-bar {
+  width: 100%;
+  z-index: 2;
+  bottom: 0;
+}
+
+.bottom-bar-box {
+  width: 100%;
+  height: 1.5rem;
+  background: rgb(45,186,82);
+  background: linear-gradient(148deg, rgba(45,186,82,1) 0%, rgba(0,102,215,1) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+.about-us {
+  text-align: center;
+  padding: 2vw;
+}
+
+.about-us p {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
