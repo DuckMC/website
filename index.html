@@ -1,84 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="styles.css" />
+    <meta name="keywords" content="duckmc, minecraft, minigames" />
+    <meta name="description" content="The best minecraft minigame network" />
+    <meta name="author" content="Wesley Schorel" />
 
-  <link rel="stylesheet" href="styles/styles.css" />
-  <title>DuckMC - Home</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DuckMC - Minecraft server</title>
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
 </head>
 
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo"><a href="index.html">
-          <h2>play.DuckMC.eu</h2>
-        </a></div>
-      <div class="desktop">
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Minigames</a>
-          </li>
-          <li>
-            <a href="#">Leaderboard</a>
-          </li>
-          <li>
-            <a href="#">Maps</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+<nav>
+    <section class="desktop-menu">
+        <ul class="desktop-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="blog.html">Rules</a></li>
+            <li><a href="store.html">Store</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>DuckMC</h1>
-      <h2>We are leader in MC Minigames Since 2016</h2>
-      <a href="index.html#text">
-        <div class="box">
-          <span></span>
-          <span></span>
-          <span></span>
+    <section class="mobile-menu">
+        <label>
+            <input type='checkbox'>
+            <span class='menu'> <span class='hamburger'></span> </span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="blog.html">Rules</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </label>
+    </section>
+</nav>
+
+
+
+<body>
+    <!-- SLIDER -->
+    <div class="split-slider">
+
+        <div class="split-slider__placeholder">
+            play.duckmc.eu
         </div>
-      </a>
+
+        <!-- begin slide 1 -->
+        <figure class="slide slide_active slide_wait">
+            <div class="slide__image">
+                <div class="slide__image-part slide__image-part_left"></div>
+                <div class="slide__image-part slide__image-part_right"></div>
+            </div>
+            <figcaption class="slide__caption">
+                <span class="slide__text">DUCKMC</span>
+            </figcaption>
+        </figure>
+        <!-- end slide 1 -->
+
+        <!-- begin slide 2 -->
+        <figure class="slide slide_wait">
+            <div class="slide__image">
+                <div class="slide__image-part slide__image-part_left"></div>
+                <div class="slide__image-part slide__image-part_right"></div>
+            </div>
+            <figcaption class="slide__caption">
+                <span class="slide__text">MINIGAMES</span>
+            </figcaption>
+        </figure>
+        <!-- end slide 2 -->
+
+        <!-- begin slide 3 -->
+        <figure class="slide slide_wait">
+            <div class="slide__image">
+                <div class="slide__image-part slide__image-part_left"></div>
+                <div class="slide__image-part slide__image-part_right"></div>
+            </div>
+            <figcaption class="slide__caption">
+                <span class="slide__text">DUCKMC</span>
+            </figcaption>
+        </figure>
+        <!-- end slide 3 -->
+
+        <!-- begin slide 4 -->
+        <figure class="slide slide_wait">
+            <div class="slide__image">
+                <div class="slide__image-part slide__image-part_left"></div>
+                <div class="slide__image-part slide__image-part_right"></div>
+            </div>
+            <figcaption class="slide__caption">
+                <span class="slide__text">MINIGAMES</span>
+            </figcaption>
+        </figure>
+        <!-- end slide 4 -->
     </div>
-  </section>
+    <!-- SLIDER -->
 
-  <section class="bottom-bar">
-    <div class="bottom-bar-box"></div>
-  </section>
+    <section class="intro-container">
+        <section class="intro-article">
+            <h1>Nice to meet you, we're DuckMC!</h1>
+            <p>DuckMC started out as a small hobby project in March 2016, which has now grown into a popular server with
+                players from all over the world. DuckMC has a
+                range of known and outstanding Minecraft minigames that can be played with friends or alone.
 
-  <section class="about-us" id="text">
-    <h2>About us</h2>
-    <p>Welcome to DuckMC! We’re an exciting Minecraft minigame server featuring a variety of unique and fun minigames.
-      Our server is a great place for players of all ages to come together and explore the world of Minecraft.
-      <br><br>
-      At DuckMC, we strive to provide an enjoyable experience for everyone. We have an extensive selection of minigames,
-      ranging from classic ones like TNT Run and Skywars to new ones like Dragon Defense and Capture the Flag. We also
-      offer special events like tournaments and giveaways to keep things interesting.
-      <br><br>
-      We take great pride in our server’s performance. We have a dedicated team of moderators who are always on hand to
-      ensure that DuckMC provides a safe, fair, and fun environment for everyone. Our technical team is always working
-      to make sure the server runs smoothly and efficiently.
-      <br><br>
-      We also put a lot of effort into making sure our community is enjoyable. We have a thriving forum where players
-      can discuss minigames, share tips and tricks, and generally have a good time. We also have a Discord server for
-      players to chat with each other.
-      <br><br>
-      We hope you’ll join us at DuckMC and enjoy all the unique minigames and exciting events that we offer. Thank you
-      for considering us, and we look forward to seeing you on the server!</p>
-  </section>
+                With the modern approach to minecraft minigames we have already welcomed tens of thousands of players in
+                our
+                previous years with great pleasure.</p>
+        </section>
+    </section>
 
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <div class="card-top">
+                    <img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2020/11/06/C2941F6A-1FAE-46E5-AA60-F42B3D35D980/98.jpg?crop=1066,600,x242,y0&width=1900&height=1069&optimize=high&format=webply"
+                    loading="lazy" alt="EXPERIENCE Banner">
+                </div>
+                <div class="card-content">
+                    <h6 class="tag tag-experience">EXPERIENCE</h6>
+                    <h3 class="title">Our longstanding experience 🕘</h3>
+                    <p>
+                        <script>
+                            // Onderstaande datum invoeren met Engelse notatie!
+                            var date = new Date('March 31, 2016');
+                            var description = 'DuckMC started as a small minecraft server in 2016, with the aim of offering the best minigames.';
 
+                            // Opmaak van de melding
+                            var begintags = '<p>';
+                            var endtags = '</p>';
+
+                            // Hieronder niets veranderen
+                            var now = new Date();
+                            var diff = date.getTime() - now.getTime();
+                            var days = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+
+                            document.write(begintags);
+
+                            if (days > 2) {
+                                document.write('Nog ' + days + ' dagen tot ' + description);
+
+                            } else { // Evenement is reeds gepasseerd
+                                document.write(description + ' We have been around for ' + Math.abs(days) + ' days and we are still going!')
+                            }
+
+                            document.write(endtags);
+                        </script>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="https://ct24.ceskatelevize.cz/sites/default/files/styles/node-article_16x9/public/images/1871572-header_price.jpg?itok=QJcjDHkr"
+                    loading="lazy" alt="MINIGAMES Banner">
+                </div>
+                <div class="card-content">
+                    <h6 class="tag tag-minigames">MINIGAMES</h6>
+                    <h3 class="title">Our awesome mini-games 🕹️</h3>
+                    <p>Our server takes a refreshing look at minecraft minigames. With a huge range of well-known and
+                        unique games, you can have hours of fun on our server.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="https://mygear.vn/media/lib/11-02-2023/ban-cap-nhat-12-cua-mine-craft-se-bo-sung-khao-co-hoc-2.jpg"
+                    loading="lazy" alt="SERVER Banner">
+                </div>
+                <div class="card-content">
+                    <h6 class="tag tag-server">SERVER</h6>
+                    <h3 class="title">Join & start playing ⛏️</h3>
+                    <p>We were pleased to welcome thousands of players to our server. So what are you waiting for, add
+                        <b>play.duckmc.eu</b> to your server list and start playing!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
+<a class="top" href="#">
+    <svg id="Layer_1" fill="white" width="2rem" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 122.88">
+    <path d="M24.94,67.88A14.66,14.66,0,0,1,4.38,47L47.83,4.21a14.66,14.66,0,0,1,20.56,0L111,46.15A14.66,14.66,0,0,1,90.46,67.06l-18-17.69-.29,59.17c-.1,19.28-29.42,19-29.33-.25L43.14,50,24.94,67.88Z"/>
+    </svg>
+</a> 
 </html>
